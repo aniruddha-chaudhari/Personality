@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+@font-face{
+    font-family: gilroy;
+    src: url(fonts\Gilroy-Light.otf);
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+
+}
+
+.top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #000000;
+    opacity: 80%;
+
+}
+
+.back {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+
+}
+
+.workingarea {
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1920px;
+    height: 100vh;
+    /* border: 1px solid red; */
+}
+
+.nav {
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav img {
+    height: 60px;
+}
+
+.nleft, .nright {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+
+.nav a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+} 
+
+.hero{
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-between;
+    transform: translate(0%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+
+.heroleft{
+    min-width: 50%;
+    background-color: yellow;
+    
+}
+.heroright{
+    min-width: 25%;
+    background-color: green;
+   
+}
