@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+   font-family: "gilroy";
 }
 
 html,
@@ -10,25 +11,23 @@ body {
     height: 100%;
 }
 
-@font-face{
-    font-family: gilroy;
-    src: url(fonts\Gilroy-Light.otf);
-}
+
 
 .main {
     width: 100%;
     height: 100vh;
-    background-color: black;
+    /* background-color: black; */
 
 }
 
 .top {
+    pointer-events: none;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
-    background-color: #000000;
+    /* background-color: #000000; */
     opacity: 80%;
 
 }
@@ -36,8 +35,14 @@ body {
 .back {
     width: 100%;
     height: 100vh;
-    background-color: black;
+    /* background-color: black; */
 
+}
+
+.back img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .workingarea {
@@ -68,9 +73,9 @@ body {
 
 
 .nav a {
+    pointer-events: all;
     text-decoration: none;
     color: #fff;
-    font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     font-size: 13px;
     font-weight: 600;
@@ -90,11 +95,67 @@ body {
 
 .heroleft{
     min-width: 50%;
-    background-color: yellow;
-    
 }
+
+.heroleft .elem{
+    position: relative;
+    margin-top: 3px;
+    height: 9.5vw;
+    /* background-color: red; */
+    overflow: hidden;
+}
+.heroleft .elem h1:nth-child(1){
+    top: 0;
+}
+
+.heroleft .elem h1{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    font-family: "kajiro";
+    color: #fff;
+    font-weight: 100;
+font-size: 12vw;
+line-height: 0.9;
+}
+
+.heroleft button{
+    padding: .8vw 3vw;
+    font-size: 3vw;
+    font-family: "kajiro";
+    margin-top: 2vw;
+    pointer-events: all;
+}
+
 .heroright{
-    min-width: 25%;
-    background-color: green;
+    width: 19%;
+    color: white;
+ 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
    
 }
+
+.heroright p{
+    text-align: right;
+   
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.heroright .imagediv{
+    width: 100%;
+    height: 170px;
+    background-image: url(https://images.unsplash.com/photo-1570158268183-d296b2892211?auto=format&fit=crop&q=80&w=1887&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-size: cover;
+    background-position: center;
+}
+
+.heroright p:nth-child(3)
+{
+    margin-bottom: 100px;
+}
+
